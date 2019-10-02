@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PlayStore.Models;
 
 namespace PlayStore.Migrations
 {
     [DbContext(typeof(PlayStoreContext))]
-    partial class PlayStoreContextModelSnapshot : ModelSnapshot
+    [Migration("20191002083802_RatingColumnDataTypeChange")]
+    partial class RatingColumnDataTypeChange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
